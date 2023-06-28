@@ -1,21 +1,23 @@
+import { Link, NavLink } from "react-router-dom";
 import Logo from "../assets/logo.png";
 
 export const Header = () => {
   return (
     <header>
-      <a href="/" className="logo">
-        <img src={Logo} alt="logo" />
-      </a>
+      <Link to="/" className="logo">
+        <img src={Logo} alt="Routemate Logo" />
+        <span>Blog</span>
+      </Link>
       <nav className="navigation">
-        <a href="/" className="link">
+        <NavLink to="/" className="link" end>
           Home
-        </a>
-        <a href="/products" className="link">
+        </NavLink>
+        <NavLink to="/products" className="link">
           Products
-        </a>
-        <a href="/contact" className="link">
+        </NavLink>
+        <NavLink to="/contact" className="link">
           Contact
-        </a>
+        </NavLink>
       </nav>
     </header>
   );
