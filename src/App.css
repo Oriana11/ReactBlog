@@ -4,7 +4,7 @@
   padding: 0px 10px;
 }
 
-.component {
+.component{
   font-size: 22px;
   padding: 20px 10px;
   box-shadow: var(--box-shadow);
@@ -20,44 +20,44 @@ header {
   align-items: center;
   max-width: 1200px;
   margin: auto;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid #EEEEEE;
   font-size: 18px;
   padding: 0px 10px;
 }
 
-.logo {
+.logo{
   display: flex;
   align-items: center;
 }
 
-.logo img {
-  max-width: 100px;
+.logo img{
+  max-width: 40px;
   margin-right: 5px;
 }
 
-.navigation .link {
+.navigation .link{
   padding: 10px;
 }
 
-.navigation .link.active {
-  background-color: #eeeeee;
+.navigation .link.active{
+  background-color: #EEEEEE;
   border-radius: 5px;
 }
 
 @media screen and (max-width: 480px) {
-  .navigation {
-    display: none;
+  .navigation{
+      display: none;
   }
 }
 
-.productList {
+.productList{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   margin: 30px 0px;
 }
 
-.productCard {
+.productCard{
   width: 350px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   border-radius: 5px;
@@ -68,81 +68,81 @@ header {
   justify-content: space-between;
 }
 
-.productCard img {
+.productCard img{
   max-width: 100%;
   height: 250px;
   margin: 10px 0px;
 }
 
-.productCard .name {
+.productCard .name{
   margin: 10px 0px;
 }
 
-.productCard p {
+.productCard p{
   font-size: 18px;
   font-weight: 500;
 }
 
-.productCard .action {
+.productCard .action{
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 10px 0px;
 }
 
-.productCard button {
+.productCard button{
   border: 0px;
   border-radius: 5px;
   font-size: 16px;
-  color: #ffffff;
-  background-color: #1c59ae;
+  color: #FFFFFF;
+  background-color: #1C59AE;
   padding: 7px 10px;
   cursor: pointer;
   max-width: 150px;
 }
 
-.productCard button:hover {
+.productCard button:hover{
   background-color: #103f80;
 }
 
-.productDetail {
+.productDetail{
   display: flex;
   justify-content: space-between;
 }
 
-.productDetail .visual {
+.productDetail .visual{
   width: 50%;
 }
 
-.productDetail .visual img {
+.productDetail .visual img{
   width: 100%;
 }
 
-.productDetail .info {
+.productDetail .info{
   max-width: 50%;
 }
 
-.productDetail .info .name {
+.productDetail .info .name{
   font-size: 20px;
   font-weight: 500;
 }
 
-.productDetail .info .description {
+.productDetail .info .description{
   font-size: 18px;
 }
 
 @media screen and (max-width: 500px) {
-  .productDetail .visual {
+  .productDetail .visual{
     width: 100%;
   }
 }
 
-footer {
+footer{
   max-width: 1200px;
   margin: auto;
   text-align: center;
   padding: 20px;
   height: 70px;
   font-size: 18px;
-  border-top: 1px solid #eeeeee;
+  border-top: 1px solid #EEEEEE;
 }

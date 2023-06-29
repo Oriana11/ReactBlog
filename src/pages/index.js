@@ -1,7 +1,7 @@
 export { Home } from "./Home";
 export { Admin } from "./Admin";
 export { PageNotFound } from "./PageNotFound";
-export { ProductList } from "./ProductList";
+export { ProductList } from "../components/ProductList";
 export { ProductDetail } from "./ProductDetail";
 export { Contact } from "./Contact/Contact";
 export { ContactIta } from "./Contact/ContactIta";

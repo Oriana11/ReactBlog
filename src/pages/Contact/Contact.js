@@ -6,13 +6,17 @@ export const Contact = () => {
   const handleSubmit = () => {
     console.log("--------");
     return navigate("/");
-  };
+  }
 
+  
   return (
     <main>
-      <div className="component">Contact</div>
+          <div className="component">Contact</div>
       <Outlet />
       <button onClick={handleSubmit}>Submit Form</button>
     </main>
+    
+     
+  
   );
 };
