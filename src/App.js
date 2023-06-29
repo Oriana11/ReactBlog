@@ -1,12 +1,12 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
-import { Home } from "./components/Home";
-import { ProductList } from "./components/ProductList";
-import { ProductDetail } from "./components/ProductDetail";
-import { Contact } from "./components/Contact";
-import { Admin } from "./components/Admin";
-import { PageNotFound } from "./components/PageNotFound";
+import { Home } from "./pages/Home";
+import { ProductList } from "./pages/ProductList";
+import { ProductDetail } from "./pages/ProductDetail";
+import { Contact } from "./pages/Contact";
+import { Admin } from "./pages/Admin";
+import { PageNotFound } from "./pages/PageNotFound";
 import { ContactIta } from "./components/ContactIta";
 import { ContactEu } from "./components/ContactEu";
 import { ContactDk } from "./components/ContactDk";
