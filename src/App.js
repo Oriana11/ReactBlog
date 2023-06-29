@@ -7,11 +7,14 @@ import { ProductDetail } from "./components/ProductDetail";
 import { Contact } from "./components/Contact";
 import { Admin } from "./components/Admin";
 import { PageNotFound } from "./components/PageNotFound";
+import { ContactIta } from "./components/ContactIta";
+import { ContactEu } from "./components/ContactEu";
+import { ContactDk } from "./components/ContactDk";
 
 import "./App.css";
 
 function App() {
-  const user = false;
+  const user = true;
 
   return (
     <div className="App">
@@ -21,7 +24,11 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="products" element={<ProductList />} />
           <Route path="products/:id" element={<ProductDetail />} />
-          <Route path="contact" element={<Contact />} />
+          <Route path="contact" element={<Contact />}>
+            <Route path="ita" element={<ContactIta />} />
+            <Route path="eu" element={<ContactEu />} />
+            <Route path="dk" element={<ContactDk />} />
+          </Route>
           <Route
             path="admin"
             element={user ? <Admin /> : <Navigate to="/" />}
