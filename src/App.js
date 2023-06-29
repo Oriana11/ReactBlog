@@ -6,6 +6,7 @@ import { ProductList } from "./components/ProductList";
 import { ProductDetail } from "./components/ProductDetail";
 import { Contact } from "./components/Contact";
 import { Admin } from "./components/Admin";
+import { PageNotFound } from "./components/PageNotFound";
 
 import "./App.css";
 
@@ -19,12 +20,13 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="products" element={<ProductList />} />
-          <Route path="products/1" element={<ProductDetail />} />
+          <Route path="products/:id" element={<ProductDetail />} />
           <Route path="contact" element={<Contact />} />
           <Route
             path="admin"
             element={user ? <Admin /> : <Navigate to="/" />}
           />
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
       </main>
       <Footer />
